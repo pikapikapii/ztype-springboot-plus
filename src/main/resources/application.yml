@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/vocab?useUnicode=true&charactorEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.repository.domain
+server:
+  port: 9523
+  servlet:
+    context-path: /eto
